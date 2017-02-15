@@ -1,0 +1,59 @@
+nth-child web sehifesinde sirali elementlerden her hansini secmekden
+otru isledilir.yeni deye bilerik ki,nth-child css selectorudur.
+
+<ul>
+  <li>Test</li>              ul li:nth-child(3n+3) {  
+                                 color: red;
+                              }
+  <li>Test</li>
+  <li>Test</li>
+  <li>Test</li>
+  <li>Test</li>
+  <li>Test</li>
+  <li>Test</li>
+  <li>Test</li>
+  <li>Test</li>
+  <li>Test</li>
+  <li>Test</li>
+  <li>Test</li>
+  <li>Test</li>
+</ul>
+
+bu verdiyim numenede css kodu li elememtlerden 3 un vuruqlarini qirmizi edir.
+bundan basqada xusisiyetleri var
+
+
+li:nth-child(7) {
+    color: brown;   
+}
+ bu numunede ise 7 ci elementi qehveyi reng edir.
+
+
+
+li:nth-child(odd) {
+    color: orange;   
+}
+bu numenede ise tek sayilari narinci edir.
+
+
+
+li:nth-child(even) {
+    color: orange;   
+}
+burda ise cut sayilara xususiyet verir.
+
+meselen ,bize sondaki ve sondan ikinci element lazimdir ,struktur belwe olacaq.
+
+
+li:last-child {
+    color: green;
+}
+bu sondaki elementi yasil edir.
+
+sondan evvelki ise beledi:
+
+
+
+li:nth-last-child(2) {
+    color: darkgreen;
+}
